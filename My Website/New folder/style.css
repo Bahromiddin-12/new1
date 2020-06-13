@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.wrapper{
+    background-color:#511cb3;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.menu-btn{
+    background-color: #fff;
+    border-radius:50%;
+    width:50px;
+    height: 50px;
+    display:block;
+}
+.menu-btn span{
+    width:20px;
+    height:2px;
+    background-color:#222;
+    display:block;
+    position:absolute;
+    top:50%;
+    margin-top: -1px;
+    margin-left:-10px;
+    left:50%;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+    content:'';
+    display:block;
+}
+.menu-btn span::before{
+    transform: translateY(-5px);
+}
+.menu-btn span::after{
+    transform: translateY(5px);
+}
